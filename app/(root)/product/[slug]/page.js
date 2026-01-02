@@ -63,7 +63,7 @@ const ProductDetailsPage = async ({ params }) => {
                   )}
                 </div>
                 {product.stock > 0 && (
-                  <Button className="w-full py-2 rounded-md">
+                  <Button className="w-full py-2 rounded-md bg-[#00425a] hover:bg-[#00425a] text-white mt-4">
                     Add to Cart
                   </Button>
                 )}

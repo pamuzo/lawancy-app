@@ -20,8 +20,8 @@ const ProductImages = ({ images }) => {
             key={index}
             onClick={() => setCurrentImage(index)}
             className={`border ${
-              currentImage === index ? "border-blue-500" : "border-gray-300"
-            } p-1 hover:border-blue-500 rounded-md mr-2 cursor-pointer`}
+              currentImage === index ? "border-[#00425a]" : "border-gray-300"
+            } p-1 hover:border-[#00425a] rounded-md mr-2 cursor-pointer`}
           >
             <Image
               src={image}
