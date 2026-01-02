@@ -1,3 +1,7 @@
+"use server";
+
+export const runtime = "nodejs";
+
 import { prisma } from "@/lib/prisma";
 import "dotenv/config";
 import sampleData from "./sample-data.js";

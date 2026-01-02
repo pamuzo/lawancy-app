@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 import { getLatestProducts } from "@/lib/actions/product.action";
 import ProductList from "@/components/shared/product/productList";
 
