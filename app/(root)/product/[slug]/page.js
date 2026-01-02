@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 import { notFound } from "next/navigation";
 import { getProductBySlug } from "@/lib/actions/product.action";
 import { Card, CardContent } from "@/components/ui/card";
