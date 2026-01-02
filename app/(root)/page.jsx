@@ -1,8 +1,6 @@
-export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
-
 import { getLatestProducts } from "@/lib/actions/product.action";
 import ProductList from "@/components/shared/product/productList";
+export const runtime = "nodejs";
 
 export default async function Home() {
   const latestProducts = await getLatestProducts();
