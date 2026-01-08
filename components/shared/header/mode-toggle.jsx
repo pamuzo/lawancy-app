@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,18 +13,14 @@ import {
 import { MoonIcon, SunIcon, SunMoon } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import React from "react";
-
 export default function ModeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
   if (!mounted) {
     return null;
   }
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -31,7 +28,7 @@ export default function ModeToggle() {
           variant="ghost"
           className="focus-visible:ring-02 focus-visible:ring-offset-0 "
         >
-          {theme === "system " ? (
+          {theme === "system" ? (
             <SunMoon />
           ) : theme === "dark" ? (
             <MoonIcon />
@@ -49,14 +46,12 @@ export default function ModeToggle() {
         >
           System
         </DropdownMenuCheckboxItem>
-
         <DropdownMenuCheckboxItem
           checked={theme === "light"}
           onClick={() => setTheme("light")}
         >
           Light
         </DropdownMenuCheckboxItem>
-
         <DropdownMenuCheckboxItem
           checked={theme === "dark"}
           onClick={() => setTheme("dark")}
