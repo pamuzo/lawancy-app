@@ -30,6 +30,19 @@
   .h3-bold {
     @apply font-bold text-xl lg:text-2xl;
   }
+  /* Error toast */
+  [data-sonner-toast][data-type="error"] {
+    @apply bg-red-600 text-white border-red-700;
+  }
+
+  /* Success toast */
+  [data-sonner-toast][data-type="success"] {
+    @apply bg-emerald-600 text-white border-emerald-700;
+  }
+}
+[data-sonner-toast][data-type="error"] {
+  background-color: #dc2626; /* red */
+  color: white;
 }
 
 @layer base {

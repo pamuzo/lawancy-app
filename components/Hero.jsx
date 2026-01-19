@@ -5,7 +5,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <section>
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:py-20 flex flex-col-reverse md:flex-row items-center gap-10">
+      <div className="max-w-7xl mx-auto  flex flex-col-reverse md:flex-row items-center gap-2">
         {/* Left Content */}
         <motion.div
           className="flex-1 text-center md:text-left"

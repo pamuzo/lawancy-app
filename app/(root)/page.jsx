@@ -10,6 +10,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
+
       <ProductList data={latestProducts} title="New Products" limit={4} />
     </main>
   );

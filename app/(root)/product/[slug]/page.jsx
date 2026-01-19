@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Product } from "@/types";
 import ProductImages from "@/components/shared/product/product-images";
+import AddToCart from "@/components/shared/product/add-to-cart";
 
 const ProductDetailsPage = async ({ params }) => {
   const { slug } = await params;
@@ -63,9 +64,18 @@ const ProductDetailsPage = async ({ params }) => {
                   )}
                 </div>
                 {product.stock > 0 && (
-                  <Button className="w-full py-2 rounded-md bg-[#00425a] hover:bg-[#00425a] text-white mt-4">
-                    Add to Cart
-                  </Button>
+                  <div className="flex-center ">
+                    <AddToCart
+                      item={{
+                        productId: product.id,
+                        name: product.name,
+                        slug: product.slug,
+                        price: product.price,
+                        qty: 1,
+                        image: product.imageUrl[0],
+                      }}
+                    />
+                  </div>
                 )}
               </CardContent>
             </Card>

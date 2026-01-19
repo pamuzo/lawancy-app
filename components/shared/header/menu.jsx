@@ -40,7 +40,7 @@ function HeaderMenu({ session, signOutUser }) {
         </h3>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8 flex items-center ">
+      <div className="max-w-7xl mx-auto pt-3  sm:px-6 lg:px-8 flex items-center ">
         <div className="flex shrink-0 px-2 lg:w-[15%] ">
           <Link href="/">
             <Image src="images/logo.svg" alt="Logo" width={64} height={64} />
@@ -94,12 +94,12 @@ function HeaderMenu({ session, signOutUser }) {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex justify-between  items-end-safe w-full  gap-1">
+          <nav className="hidden md:flex justify-between items-end-safe w-full  gap-1">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#00425A] hover:font-bold px-2 py-1 transition-all duration-300"
+                className="text-[#00425A] hover:font-bold px-2   transition-all duration-300"
               >
                 {item.name}
               </a>
